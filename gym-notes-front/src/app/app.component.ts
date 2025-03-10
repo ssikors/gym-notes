@@ -8,9 +8,20 @@ import { HeaderComponent } from './components/header/header.component';
   imports: [RouterOutlet, HomeComponent, HeaderComponent],
   template: `
     <app-header />
-    <app-home />
+    <main>
+      <app-home />
+    </main>
   `,
-  styles: [],
+  styles: [
+    `main {
+      padding: 16px;
+      width: 100%;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+      align-content: center;
+    }`
+  ],
 })
 export class AppComponent {
   title = 'gym-notes-front';
